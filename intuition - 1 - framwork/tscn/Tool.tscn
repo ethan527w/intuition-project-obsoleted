@@ -1,0 +1,53 @@
+[gd_scene load_steps=8 format=3 uid="uid://t0r727ascf7k"]
+
+[ext_resource type="Script" path="res://scripts/Tool.gd" id="1_iuqka"]
+[ext_resource type="Texture2D" uid="uid://r7fagkpivdsm" path="res://sprite/icon.svg" id="2_xuqus"]
+[ext_resource type="Script" path="res://scripts/detector1.gd" id="3_f0qxo"]
+[ext_resource type="Script" path="res://scripts/detector2.gd" id="4_e0u06"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_jwqxx"]
+size = Vector2(400, 100)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_j0l40"]
+size = Vector2(100, 25)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_psadg"]
+size = Vector2(100, 25)
+
+[node name="Tool" type="Node2D"]
+script = ExtResource("1_iuqka")
+
+[node name="tool" type="Area2D" parent="."]
+
+[node name="Icon" type="Sprite2D" parent="tool"]
+texture = ExtResource("2_xuqus")
+
+[node name="shapeTool" type="CollisionShape2D" parent="tool"]
+shape = SubResource("RectangleShape2D_jwqxx")
+
+[node name="detector1" type="Area2D" parent="."]
+script = ExtResource("3_f0qxo")
+
+[node name="detector1" type="CollisionShape2D" parent="detector1"]
+position = Vector2(-118, -50)
+shape = SubResource("RectangleShape2D_j0l40")
+one_way_collision_margin = 0.0
+
+[node name="Icon" type="Sprite2D" parent="detector1"]
+position = Vector2(-120, -50)
+scale = Vector2(0.859375, 0.203125)
+texture = ExtResource("2_xuqus")
+
+[node name="detector2" type="Area2D" parent="."]
+script = ExtResource("4_e0u06")
+
+[node name="detector2" type="CollisionShape2D" parent="detector2"]
+position = Vector2(118, -50)
+shape = SubResource("RectangleShape2D_psadg")
+
+[node name="Icon" type="Sprite2D" parent="detector2"]
+position = Vector2(125, -50)
+scale = Vector2(1.15625, 0.171875)
+texture = ExtResource("2_xuqus")
+
+[connection signal="input_event" from="tool" to="." method="detector_input_event"]
