@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://cqf4wctdugejj"]
+
+[ext_resource type="PackedScene" uid="uid://dtok74cnus8b6" path="res://tscn/question.tscn" id="1_xslyc"]
+[ext_resource type="PackedScene" uid="uid://dx7chfmgtfmpb" path="res://tscn/drop_area.tscn" id="2_fm5t5"]
+
+[node name="main" type="Node2D"]
+
+[node name="question" parent="." instance=ExtResource("1_xslyc")]
+position = Vector2(763, 120)
+
+[node name="drop area" parent="." instance=ExtResource("2_fm5t5")]
+position = Vector2(948, 575)
