@@ -1,0 +1,208 @@
+[gd_scene load_steps=2 format=3 uid="uid://di4ff4quoepcc"]
+
+[ext_resource type="Script" path="res://LevelChoiceScene.gd" id="1_kjdka"]
+
+[node name="LevelChoiceScene" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_kjdka")
+
+[node name="BackButton1" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -114.0
+offset_top = -31.0
+grow_horizontal = 0
+grow_vertical = 0
+text = "Back to Menu"
+
+[node name="ScrollContainer" type="ScrollContainer" parent="."]
+layout_mode = 1
+anchors_preset = 9
+anchor_bottom = 1.0
+offset_right = 1160.0
+offset_bottom = -36.0
+grow_vertical = 2
+horizontal_scroll_mode = 0
+vertical_scroll_mode = 2
+
+[node name="Chapters" type="VBoxContainer" parent="ScrollContainer"]
+layout_direction = 1
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.0
+metadata/_edit_use_anchors_ = true
+
+[node name="Chapter1Button" type="Button" parent="ScrollContainer/Chapters"]
+layout_mode = 2
+text = "Chapter 1"
+
+[node name="Chapter1Levels" type="HBoxContainer" parent="ScrollContainer/Chapters"]
+visible = false
+layout_mode = 2
+
+[node name="Level1" type="Button" parent="ScrollContainer/Chapters/Chapter1Levels"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Level 1"
+
+[node name="Level2" type="Button" parent="ScrollContainer/Chapters/Chapter1Levels"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Level 2"
+
+[node name="Level3" type="Button" parent="ScrollContainer/Chapters/Chapter1Levels"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Level 3"
+
+[node name="Level4" type="Button" parent="ScrollContainer/Chapters/Chapter1Levels"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Level 4"
+
+[node name="Level5" type="Button" parent="ScrollContainer/Chapters/Chapter1Levels"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Level 5"
+
+[node name="Chapter2Button" type="Button" parent="ScrollContainer/Chapters"]
+layout_mode = 2
+text = "Chapter 2"
+
+[node name="Chapter2Levels" type="HBoxContainer" parent="ScrollContainer/Chapters"]
+visible = false
+layout_mode = 2
+
+[node name="Level1" type="Button" parent="ScrollContainer/Chapters/Chapter2Levels"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Level 1"
+
+[node name="Level2" type="Button" parent="ScrollContainer/Chapters/Chapter2Levels"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Level 2"
+
+[node name="Level3" type="Button" parent="ScrollContainer/Chapters/Chapter2Levels"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Level 3"
+
+[node name="Level4" type="Button" parent="ScrollContainer/Chapters/Chapter2Levels"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Level 4"
+
+[node name="Level5" type="Button" parent="ScrollContainer/Chapters/Chapter2Levels"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Level 5"
+
+[node name="Chapter3Button" type="Button" parent="ScrollContainer/Chapters"]
+layout_mode = 2
+text = "Chapter 3"
+
+[node name="Chapter3Levels" type="HBoxContainer" parent="ScrollContainer/Chapters"]
+visible = false
+layout_mode = 2
+
+[node name="Level1" type="Button" parent="ScrollContainer/Chapters/Chapter3Levels"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Level 1"
+
+[node name="Level2" type="Button" parent="ScrollContainer/Chapters/Chapter3Levels"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Level 2"
+
+[node name="Level3" type="Button" parent="ScrollContainer/Chapters/Chapter3Levels"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Level 3"
+
+[node name="Level4" type="Button" parent="ScrollContainer/Chapters/Chapter3Levels"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Level 4"
+
+[node name="Level5" type="Button" parent="ScrollContainer/Chapters/Chapter3Levels"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Level 5"
+
+[node name="Chapter4Button" type="Button" parent="ScrollContainer/Chapters"]
+layout_mode = 2
+text = "Chapter 4"
+
+[node name="Chapter4Levels" type="HBoxContainer" parent="ScrollContainer/Chapters"]
+visible = false
+layout_mode = 2
+
+[node name="Level1" type="Button" parent="ScrollContainer/Chapters/Chapter4Levels"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Level 1"
+
+[node name="Level2" type="Button" parent="ScrollContainer/Chapters/Chapter4Levels"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Level 2"
+
+[node name="Level3" type="Button" parent="ScrollContainer/Chapters/Chapter4Levels"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Level 3"
+
+[node name="Level4" type="Button" parent="ScrollContainer/Chapters/Chapter4Levels"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Level 4"
+
+[node name="Level5" type="Button" parent="ScrollContainer/Chapters/Chapter4Levels"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Level 5"
+
+[node name="Chapter5Button" type="Button" parent="ScrollContainer/Chapters"]
+layout_mode = 2
+text = "Chapter 5"
+
+[node name="Chapter5Levels" type="HBoxContainer" parent="ScrollContainer/Chapters"]
+visible = false
+layout_mode = 2
+
+[node name="Level1" type="Button" parent="ScrollContainer/Chapters/Chapter5Levels"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Level 1"
+
+[node name="Level2" type="Button" parent="ScrollContainer/Chapters/Chapter5Levels"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Level 2"
+
+[node name="Level3" type="Button" parent="ScrollContainer/Chapters/Chapter5Levels"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Level 3"
+
+[node name="Level4" type="Button" parent="ScrollContainer/Chapters/Chapter5Levels"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Level 4"
+
+[node name="Level5" type="Button" parent="ScrollContainer/Chapters/Chapter5Levels"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Level 5"

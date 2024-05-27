@@ -1,0 +1,50 @@
+[gd_scene load_steps=6 format=3 uid="uid://cotlomwegr14l"]
+
+[ext_resource type="Script" path="res://Control.gd" id="1_4xkj0"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_pwbbg"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_h0snl"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xxbvj"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ufepm"]
+
+[node name="CanvasLayer" type="CanvasLayer"]
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_4xkj0")
+
+[node name="DailyTasksButton" type="Button" parent="Control"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.103299
+anchor_top = 0.317901
+anchor_right = 0.384549
+anchor_bottom = 0.794753
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_pwbbg")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_h0snl")
+text = "Daily Tasks"
+metadata/_edit_use_anchors_ = true
+
+[node name="LevelChoiceButton" type="Button" parent="Control"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.622396
+anchor_top = 0.361111
+anchor_right = 0.900174
+anchor_bottom = 0.787037
+grow_horizontal = 0
+grow_vertical = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_xxbvj")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_ufepm")
+text = "Level Choice"
+metadata/_edit_use_anchors_ = true

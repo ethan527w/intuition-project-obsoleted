@@ -1,0 +1,146 @@
+[gd_scene load_steps=2 format=3 uid="uid://dfu0ywnivqymr"]
+
+[ext_resource type="Script" path="res://DailyTasksScene.gd" id="1_p386g"]
+
+[node name="DailyTasksScene" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_p386g")
+
+[node name="BackButton" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -114.0
+offset_top = -31.0
+grow_horizontal = 0
+grow_vertical = 0
+text = "Back to Menu"
+
+[node name="ScrollContainer" type="ScrollContainer" parent="."]
+layout_mode = 1
+anchors_preset = 9
+anchor_bottom = 1.0
+offset_right = 110.0
+grow_vertical = 2
+horizontal_scroll_mode = 0
+vertical_scroll_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ScrollContainer"]
+layout_mode = 2
+
+[node name="Misson1" type="Button" parent="ScrollContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+text = "Misson1"
+
+[node name="Misson2" type="Button" parent="ScrollContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+text = "Misson2"
+
+[node name="Misson3" type="Button" parent="ScrollContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+text = "Misson3"
+
+[node name="Misson4" type="Button" parent="ScrollContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+text = "Misson4"
+
+[node name="Container" type="PanelContainer" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.161458
+anchor_top = 0.100309
+anchor_right = 0.901042
+anchor_bottom = 0.742284
+grow_horizontal = 2
+grow_vertical = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="M_Panel1" type="Panel" parent="Container"]
+visible = false
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Container/M_Panel1"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="EnterButton1" type="Button" parent="Container/M_Panel1"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.753521
+anchor_top = 1.0649
+anchor_right = 1.00117
+anchor_bottom = 1.21154
+text = "Enter Mission"
+metadata/_edit_use_anchors_ = true
+
+[node name="M_Panel2" type="Panel" parent="Container"]
+visible = false
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Container/M_Panel2"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="EnterButton2" type="Button" parent="Container/M_Panel2"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.753521
+anchor_top = 1.0649
+anchor_right = 1.00117
+anchor_bottom = 1.21154
+text = "Enter Mission"
+metadata/_edit_use_anchors_ = true
+
+[node name="M_Panel3" type="Panel" parent="Container"]
+visible = false
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Container/M_Panel3"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="EnterButton3" type="Button" parent="Container/M_Panel3"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.753521
+anchor_top = 1.0649
+anchor_right = 1.00117
+anchor_bottom = 1.21154
+text = "Enter Mission"
+metadata/_edit_use_anchors_ = true
+
+[node name="M_Panel4" type="Panel" parent="Container"]
+visible = false
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Container/M_Panel4"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="EnterButton4" type="Button" parent="Container/M_Panel4"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.753521
+anchor_top = 1.0649
+anchor_right = 1.00117
+anchor_bottom = 1.21154
+text = "Enter Mission"
+metadata/_edit_use_anchors_ = true
+
+[connection signal="pressed" from="BackButton" to="." method="_on_BackButton_pressed"]
